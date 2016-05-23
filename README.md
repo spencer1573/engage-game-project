@@ -6,3 +6,10 @@ This project helps developers learn Object Oriented programming.
 - SCSS
 - Webpack
 - Firebase
+
+## Steps
+- fork project
+- git clone
+- git checkout start
+- npm install
+- webpack
