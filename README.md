@@ -11,5 +11,9 @@ This project helps developers learn Object Oriented programming.
 - fork project
 - git clone
 - git checkout start
+- npm install -g typescript  
+- npm install -g webpack
+- npm install -g tsd 
 - npm install
-- webpack
+- npm run-script run
+- navigate to http://localhost:8080/webpack-dev-server/index.html
