@@ -29,4 +29,4 @@ export class Bunny extends Animal {
 var animal = new Animal('George', 4);
 animal.getName();
 
-
+console.log("here");
