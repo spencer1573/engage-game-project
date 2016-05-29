@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "jquery": "^2.2.4",
+    "shuffle-array": "^1.0.0",
     "ts-loader": "^0.8.2"
   }
 }
