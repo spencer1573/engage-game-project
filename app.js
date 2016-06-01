@@ -1,37 +1,4 @@
 
-/// <refrence path="./jquery/jquery.d.ts" />
-
-import $ = module('jquery');
-
-interface AttrData {
-    name:       string,
-    age:        number, 
-    weight?:    string 
-}
-
-export class Animal {
-    constructor(public name: string, private age: number) {}
-
-    public getName() : string {
-        return this.name;
-    }
-
-}
-
-class Car {
-    constructor(parameters) {
-        
-    }
-}
-
-export class Bunny extends Animal {
-    constructor(private attr: AttrData) {
-        super(attr.name, attr.age);
-    }
-}
-
-var animal = new Animal('George', 4);
-animal.getName();
 
 //shuffle function copied from stackoverflow
 function shuffle(array) {
@@ -103,7 +70,6 @@ for(var row = 0; row < 4; row++) {
         divDis.style.top = "0";
         divDis.style.left = "0";
         divDis.style.backgroundColor = "white";
-        divDis.onclick = (e) => { disappear(); };
         imgDiv.appendChild(divDis);
         
     }
@@ -113,10 +79,18 @@ for(var row = 0; row < 4; row++) {
 //var transparent = document.getElementById("dis-0,0");
 //transparent.style.backgroundColor = "transparent";
 
-
+/*
 $(document).ready(function() {
     console.log('this is ready');
 });
-var disappear = function disappear() {
-    console.log("1");
-}
+*/
+$('.dis').click(function (event) {
+    //var divClicked = document.getElementById(event.target.id);
+    //console.log(divClicked);
+    $(this).fadeOut();
+    console.log($(this));
+    //event.target.css("background-color", "black");
+    $("body").css("background-color", "#EC6448");
+});
+
+
